@@ -1,0 +1,11 @@
+FROM mariadb:12.1.2
+
+ENV MARIADB_ROOT_PASSWORD=password123
+ENV MARIADB_USER=spring-user
+ENV MARIADB_PASSWORD=password123
+ENV MARIADB-DATABASE=rest-api
+
+EXPOSE 3306
+
+CMD ["mariadbd"]
+
